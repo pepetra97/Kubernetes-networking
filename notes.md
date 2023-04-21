@@ -13,3 +13,11 @@ Kubernetes Service Accounts are created and managed using the Kubernetes API. Ea
 By default, every namespace in a Kubernetes cluster has a default Service Account created for it. Pods created within the namespace are automatically associated with this default Service Account, unless a different Service Account is specified. However, you can create additional Service Accounts if you need to grant different permissions to different sets of Pods.
 
 Overall, Kubernetes Service Accounts are an important component of the Kubernetes security model, providing a way to control access to resources within the cluster and ensure that Pods can only access the resources they need to perform their functions.
+
+## Commands
+
+### Checking Role
+```
+kubectl describe role <name of role>
+
+```
